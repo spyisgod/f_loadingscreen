@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise RP Loading Screen</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="config.js"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <div id="background-container">
+        <!-- Background will be inserted here via JS -->
+    </div>
+
+    <div class="image-popup-overlay">
+        <div class="popup-image-container">
+            <img class="popup-image" src="" alt="">
+            <button class="close-popup">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="popup-image-title"></div>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="logo-container">
+            <img src="" alt="Server Logo" id="server-logo">
+        </div>
+
+        <div class="main-content">
+            <div class="news-container">
+                <button class="toggle-news">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <h2>HABERLER</h2>
+                <div class="news-list" id="news-list">
+                    <!-- News items will be inserted here via JS -->
+                </div>
+            </div>
+        </div>
+
+        <div class="loading-container">
+            <div class="loading-text">YÜKLENİYOR <span id="loading-percentage">0%</span></div>
+            <div class="loading-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <div class="music-container">
+            <div class="album-art">
+                <img src="assets/news/album-cover.jpg" alt="Album Cover">
+                <div class="music-wave"></div>
+            </div>
+            <div class="music-info">
+                <div class="song-title">Other Position!</div>
+                <div class="song-artist">2Pac - Miyagi</div>
+            </div>
+            <div class="music-controls">
+                <button class="control-btn play-pause" id="play-pause">
+                    <i class="fas fa-play"></i>
+                </button>
+                <div class="volume-control">
+                    <button class="volume-btn">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                    <input type="range" class="volume-slider" min="0" max="100" value="50">
+                </div>
+            </div>
+            <audio id="music-player" autoplay loop>
+                <source src="assets/music.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
